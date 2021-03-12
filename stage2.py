@@ -10,4 +10,4 @@ auth=IntersightAuth(secret_key_filename=config['INTERSIGHT_CERT'],
 
 BASE_URL='https://www.intersight.com/api/v1'
 
-
+aci_session = get_authenticated_aci_session(config['ACI_USER'], config['ACI_PASSWORD'], config['ACI_BASE_URL'])
